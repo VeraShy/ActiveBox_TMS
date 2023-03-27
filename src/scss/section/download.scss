@@ -1,0 +1,26 @@
+.download {
+    width: 100%;
+    &-wrapper {
+        padding-top: 114px;
+        padding-bottom: 114px;
+        text-align: center;
+    }
+    &-title {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        color: #000000;
+        padding: 17.5px 0;
+        margin-bottom: 5px;
+    }
+    &-text {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 47.7px;
+            }
+}

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Cardo', serif;
+    font-family: 'Raleway', sans-serif;   
+}
+.body {
+    width: 100%;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 1200px) {
+    max-width: 984px
+    }
+}

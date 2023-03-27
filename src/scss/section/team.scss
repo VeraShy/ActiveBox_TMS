@@ -1,0 +1,58 @@
+.team {
+    width: 100%;
+    &-wrapper {
+        display: flex;
+        column-gap: 30px;
+        padding-top: 114px;
+        padding-bottom: 114px;
+    }
+    &-block {
+        width: 25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        &__img img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        &__text {
+            font-family: 'Raleway';
+            padding-top: 30px;
+            &-name {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                color: #2D3033;
+                margin-bottom: 5.3px;
+            }
+            &-prof {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: #FF4343;              
+                margin-bottom: 17.9px;
+            }
+            &-desc {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #6C7279;
+                margin-bottom: 37.8px;
+            }
+        }
+        &__socials {
+            display: flex;
+            column-gap: 6px;
+            &-stroke {
+                width: 39px;
+                height: 39px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgba(198, 203, 205, 1);
+            }
+        }
+    }
+}
