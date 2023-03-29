@@ -560,6 +560,9 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _swiper = require("swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
+(0, _swiperDefault.default).use([
+    (0, _swiper.Pagination)
+]);
 const swiper = new (0, _swiperDefault.default)(".reviews-slider", {
     direction: "horizontal",
     loop: true,
@@ -578,8 +581,8 @@ const swiper = new (0, _swiperDefault.default)(".reviews-slider", {
 });
 const header = document.querySelector(".header");
 window.addEventListener("scroll", function() {
-    if (window.scrollY >= 1) header.classList.addClass("header_scrolling");
-    else header.classList.removeClass("header_scrolling");
+    if (window.scrollY >= 10) header.classList.add("header_scrolling");
+    else header.classList.remove("header_scrolling");
 });
 
 },{"swiper":"cCbRx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cCbRx":[function(require,module,exports) {

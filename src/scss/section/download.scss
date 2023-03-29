@@ -22,5 +22,31 @@
         text-transform: uppercase;
         color: #000000;
         margin-bottom: 47.7px;
-            }
+    }
+}
+
+@media (max-width: 1024px) {
+    .download {
+        &-wrapper {
+            padding-top: 77.5px;
+            padding-bottom: 78px;
+        }
+        &-title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        &-text {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 43.3px;
+        }
+    }
+    .btn-red_download {
+        width: 314px;
+        padding: 29.5px 0;
+        & a {
+            font-size: 18px;
+            line-height: 21px;  
+        }        
+    }
 }

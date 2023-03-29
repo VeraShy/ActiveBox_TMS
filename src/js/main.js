@@ -1,4 +1,5 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Pagination]);
 
 const swiper = new Swiper('.reviews-slider', {
     direction: 'horizontal',
@@ -20,11 +21,13 @@ const swiper = new Swiper('.reviews-slider', {
       },
   });   
 
-  const header = document.querySelector('.header'); 
+
+const header = document.querySelector('.header'); 
 window.addEventListener('scroll', function() {
-  if (window.scrollY >= 1) {
-    header.classList.addClass('header_scrolling'); 
+   
+  if (window.scrollY >= 10) {
+    header.classList.add('header_scrolling'); 
   } else {
-    header.classList.removeClass('header_scrolling');
+    header.classList.remove('header_scrolling');
   }
 });

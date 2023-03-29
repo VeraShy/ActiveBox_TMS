@@ -1,4 +1,4 @@
-.team {
+ .team {
     width: 100%;
     &-wrapper {
         display: flex;
@@ -38,7 +38,7 @@
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;
-                color: #6C7279;
+                color: rgb(108, 114, 121);
                 margin-bottom: 37.8px;
             }
         }
@@ -52,7 +52,59 @@
                 justify-content: center;
                 align-items: center;
                 border: 1px solid rgba(198, 203, 205, 1);
+                transition: 0.3s;
+                & svg path{
+                    transition: 0.3s;
+                }
+            }
+            & a:hover .team-block__socials-stroke {
+                border: 1px solid rgb(108, 114, 121);
+            }
+            & a:hover .team-block__socials-stroke svg path{
+                fill:rgb(108, 114, 121);
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .team {
+        &-wrapper {
+            max-width: 1200px;
+            column-gap: 25px;
+            padding-top: 78px;
+            padding-bottom: 78.5px;
+        }
+        &-block {
+            &__text {
+                padding-top: 25px;
+                &-name {
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-bottom: 4.6px;
+                }
+                &-prof {
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 22.5px;
+                }
+                &-desc {
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 39px;
+                }
+            }
+            &__socials {
+                &-stroke {
+                    width: 33px;
+                    height: 33px;
+                    & svg {
+                        transform: scale(0.8);
+                    }
+                }
             }
         }
     }
+
 }

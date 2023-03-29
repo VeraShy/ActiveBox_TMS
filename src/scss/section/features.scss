@@ -44,3 +44,33 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .features {
+        &-wrapper {
+            padding-top: 78px;
+            padding-bottom: 80px;
+        }
+        &-row {
+            column-gap: 20px;
+        }
+        &-block {
+            &__img {
+                width: 85px;
+                height: 85px;
+                & svg {
+                    transform: scale(0.9);
+                }
+            }
+            &__title {
+                font-size: 18px;
+                line-height: 21px;
+                margin: 23.5px 0 0 0;
+            }
+            &__text {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
