@@ -5,7 +5,8 @@
     list-style-type: none;
     text-decoration: none;
     font-family: 'Cardo', serif;
-    font-family: 'Raleway', sans-serif;   
+    font-family: 'Raleway', sans-serif; 
+    scroll-behavior: smooth;  
 }
 .body {
     width: 100%;
@@ -16,6 +17,10 @@
     padding: 0 15px;
 
     @media (max-width: 1200px) {
-    max-width: 1014px
+        max-width: 1014px
+    }
+
+    @media (max-width: 500px) {
+        padding: 0 20px;
     }
 }

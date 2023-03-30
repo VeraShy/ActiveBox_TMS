@@ -33,14 +33,12 @@
     padding: 25px 0;
     text-align: center;
     transition: 0.3s;
-    & a {
-        font-family: 'Raleway';
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 28px;
-        text-transform: uppercase;
-        color: #FFFFFF;
-    }
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
     &:hover {
         background-color: rgba(231, 20, 20, 1);
     }
@@ -96,19 +94,23 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .main {
         &-wrapper {
-            padding-top: 200px;
-            padding-bottom: 70px;
+            padding-top: 106px;
+            padding-bottom: 52px;
         }
         &__title {
-            font-size: 36px;
-            line-height: 42px;
-            margin-bottom: 50px;
+            margin-bottom: 33px;
         }
         &__text {
-            margin-bottom: 50px;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 49px;
         }
+    }
+    .btn-red_main {
+        width: 280px;
+        padding: 16px 0;
     }
 }

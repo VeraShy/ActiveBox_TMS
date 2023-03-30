@@ -1,6 +1,7 @@
  .team {
     width: 100%;
     &-wrapper {
+        width: 100%;
         display: flex;
         column-gap: 30px;
         padding-top: 114px;
@@ -14,34 +15,37 @@
         &__img img{
             width: 100%;
             height: auto;
+            display: block;
             object-fit: cover;
         }
-        &__text {
-            font-family: 'Raleway';
-            padding-top: 30px;
-            &-name {
+        &__name {
+                font-family: 'Raleway';
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 28px;
                 color: #2D3033;
                 margin-bottom: 5.3px;
+                padding-top: 30px;
             }
-            &-prof {
+        &__prof {
+                font-family: 'Raleway';
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;
                 text-transform: uppercase;
                 color: #FF4343;              
                 margin-bottom: 17.9px;
+                flex-grow: 1;
             }
-            &-desc {
+        &__desc {
+                font-family: 'Raleway';
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;
                 color: rgb(108, 114, 121);
                 margin-bottom: 37.8px;
             }
-        }
+    
         &__socials {
             display: flex;
             column-gap: 6px;
@@ -63,8 +67,8 @@
             & a:hover .team-block__socials-stroke svg path{
                 fill:rgb(108, 114, 121);
             }
+        
         }
-
     }
 }
 
@@ -77,24 +81,23 @@
             padding-bottom: 78.5px;
         }
         &-block {
-            &__text {
-                padding-top: 25px;
-                &-name {
+            &__name {
                     font-size: 18px;
                     line-height: 21px;
                     margin-bottom: 4.6px;
+                    padding-top: 25px;
                 }
-                &-prof {
+            &__prof {
                     font-size: 14px;
                     line-height: 16px;
                     margin-bottom: 22.5px;
                 }
-                &-desc {
+            &__desc {
                     font-size: 14px;
                     line-height: 16px;
                     margin-bottom: 39px;
                 }
-            }
+            
             &__socials {
                 &-stroke {
                     width: 33px;
@@ -106,5 +109,53 @@
             }
         }
     }
+}
 
+@media (max-width: 768px) {
+    .team {
+        &-wrapper {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 49px;
+            column-gap: 0;
+        }
+        &-block {
+            width: 48%;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .team {
+        &-wrapper {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+        &-block {
+            width: 100%;
+            max-width: 330px;
+            margin: 0 auto;
+            &__img img{
+                height: 227px;
+                display: block;
+                object-fit: cover;
+                
+            }
+            &__prof {
+                margin-bottom: 36px;
+            }
+            &__desc {
+                margin-bottom: 55px;
+            }
+            &__socials {
+                &-stroke {
+                    width: 39px;
+                    height: 39px;
+                    & svg {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
 }

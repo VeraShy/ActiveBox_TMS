@@ -44,9 +44,29 @@
     .btn-red_download {
         width: 314px;
         padding: 29.5px 0;
-        & a {
+        font-size: 18px;
+        line-height: 21px;       
+    }
+}
+
+@media (max-width: 450px) {
+    .download {
+        &-wrapper {
+            padding-top: 35px;
+            padding-bottom: 45px;
+        }
+        &-title {
             font-size: 18px;
-            line-height: 21px;  
-        }        
+            line-height: 21px;
+            padding: 19px 0;
+        }
+        &-text {
+            font-size: 13px;
+            line-height: 15px;
+            margin-bottom: 11px;
+        }
+    }
+    .btn-red_download {
+        width: 279px;   
     }
 }
