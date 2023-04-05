@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     z-index: 3;
-    &-wrapper {
+    &-content {
         padding-top: 230px;
         padding-bottom: 120px;
     }
@@ -51,7 +51,7 @@
 
 @media (max-width: 1024px) {
     .main {
-        &-wrapper {
+        &-content {
             padding-top: 257px;
             padding-bottom: 126px;
         }
@@ -79,7 +79,7 @@
 
 @media (max-width: 768px) {
     .main {
-        &-wrapper {
+        &-content {
             padding-top: 200px;
             padding-bottom: 70px;
         }
@@ -96,7 +96,7 @@
 
 @media (max-width: 450px) {
     .main {
-        &-wrapper {
+        &-content {
             padding-top: 106px;
             padding-bottom: 52px;
         }

@@ -1,6 +1,6 @@
 .download {
     width: 100%;
-    &-wrapper {
+    &-content {
         padding-top: 114px;
         padding-bottom: 114px;
         text-align: center;
@@ -27,7 +27,7 @@
 
 @media (max-width: 1024px) {
     .download {
-        &-wrapper {
+        &-content {
             padding-top: 77.5px;
             padding-bottom: 78px;
         }
@@ -51,7 +51,7 @@
 
 @media (max-width: 450px) {
     .download {
-        &-wrapper {
+        &-content {
             padding-top: 35px;
             padding-bottom: 45px;
         }

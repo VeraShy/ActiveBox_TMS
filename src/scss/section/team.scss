@@ -1,6 +1,6 @@
  .team {
     width: 100%;
-    &-wrapper {
+    &-content {
         width: 100%;
         display: flex;
         column-gap: 30px;
@@ -61,10 +61,10 @@
                     transition: 0.3s;
                 }
             }
-            & a:hover .team-block__socials-stroke {
+            & a:hover  {
                 border: 1px solid rgb(108, 114, 121);
             }
-            & a:hover .team-block__socials-stroke svg path{
+            & a:hover svg path{
                 fill:rgb(108, 114, 121);
             }
         
@@ -74,7 +74,7 @@
 
 @media (max-width: 1200px) {
     .team {
-        &-wrapper {
+        &-content {
             max-width: 1200px;
             column-gap: 25px;
             padding-top: 78px;
@@ -113,7 +113,7 @@
 
 @media (max-width: 768px) {
     .team {
-        &-wrapper {
+        &-content {
             flex-wrap: wrap;
             justify-content: space-between;
             row-gap: 49px;
@@ -127,7 +127,7 @@
 
 @media (max-width: 450px) {
     .team {
-        &-wrapper {
+        &-content {
             padding-top: 35px;
             padding-bottom: 35px;
         }

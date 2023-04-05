@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    &-wrapper {
+    &-content {
         width: 100%;
         display: flex;
         column-gap: 30px;
@@ -46,10 +46,10 @@
                         transition: 0.3s;
                     }
                 }
-                & a:hover .footer-info-block__socials-stroke {
+                & a:hover {
                     border: 1px solid rgb(255, 255, 255);
                 }
-                & a:hover .footer-info-block__socials-stroke svg path {
+                & a:hover svg path {
                     fill: rgb(255, 255, 255);
                 }
             
@@ -79,7 +79,7 @@
 
 @media (max-width: 1024px) {
     .footer {
-        &-wrapper {
+        &-content {
             padding: 46.6px 0 43.1px 0;
         }
         &-info {
@@ -117,7 +117,7 @@
 
 @media (max-width: 600px) {
     .footer {
-        &-wrapper {
+        &-content {
             flex-direction: column;
             row-gap: 64px;
             padding: 34px 0;
